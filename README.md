@@ -6,6 +6,7 @@
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)]()
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)]()
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)](https://www.figma.com/proto/rWln2rC4vJYyfOKKvzmkAn?node-id=0-1&t=WXlFyOb4iMDQtTQ0-6)
 [![Diseño centrado en el usuario](https://img.shields.io/badge/Dise%C3%B1o-centrado_en_el_usuario-1D4ED8?style=flat)]()
 [![Estado](https://img.shields.io/badge/Estado-Completado-1F7A8C?style=flat)]()
 
@@ -66,9 +67,11 @@ Pensado para móvil, reproduce el recorrido principal de la app:
 
 ## 🚀 Cómo verlo
 
-**▶ [Ver el prototipo en vivo](https://unaigb.github.io/MyVitality-IPO/prototype/)** — se abre en la pantalla de acceso. Es un prototipo: al teclear en los campos de usuario y contraseña se rellenan solos con datos ficticios, así que basta con escribir algo y pulsar **ENTRAR**.
+Hay dos versiones del prototipo:
 
-Para ver el diseño como en un teléfono, activa el modo dispositivo de las herramientas de desarrollo del navegador con un ancho de unos 390 px.
+**▶ [Demo interactiva en Figma](https://www.figma.com/proto/rWln2rC4vJYyfOKKvzmkAn?node-id=0-1&t=WXlFyOb4iMDQtTQ0-6)** — la versión más completa. Se abre en el navegador, sin instalar nada.
+
+**▶ [Prototipo HTML en vivo](https://unaigb.github.io/MyVitality-IPO/prototype/)** — el que contiene este repositorio. Se abre en la pantalla de acceso; es un prototipo: al teclear en los campos de usuario y contraseña se rellenan solos con datos ficticios, así que basta con escribir algo y pulsar **ENTRAR**. Para verlo como en un teléfono, activa el modo dispositivo de las herramientas de desarrollo del navegador con un ancho de unos 390 px.
 
 En local, abre `prototype/index.html` en el navegador (se redirige solo a la pantalla de acceso).
 
@@ -100,7 +103,7 @@ MyVitality-IPO/
 
 | Categoría | Herramientas |
 | :--- | :--- |
-| **Prototipo** | HTML5 · CSS3 |
+| **Prototipo** | Figma · HTML5 · CSS3 |
 | **Metodología** | Desarrollo centrado en el usuario · prototipado iterativo · evaluación con usuarios |
 
 ---
