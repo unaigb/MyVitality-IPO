@@ -66,7 +66,11 @@ Pensado para móvil, reproduce el recorrido principal de la app:
 
 ## 🚀 Cómo verlo
 
-Abre `prototype/index.html` en el navegador (se redirige solo a la pantalla de acceso). Para ver el diseño como en un teléfono, activa el modo dispositivo de las herramientas de desarrollo con un ancho de unos 390 px.
+**▶ [Ver el prototipo en vivo](https://unaigb.github.io/MyVitality-IPO/prototype/)** — se abre en la pantalla de acceso. Es un prototipo: al teclear en los campos de usuario y contraseña se rellenan solos con datos ficticios, así que basta con escribir algo y pulsar **ENTRAR**.
+
+Para ver el diseño como en un teléfono, activa el modo dispositivo de las herramientas de desarrollo del navegador con un ancho de unos 390 px.
+
+En local, abre `prototype/index.html` en el navegador (se redirige solo a la pantalla de acceso).
 
 ---
 
