@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+        <link href="./css/main.css" rel="stylesheet" />
+        <title>Escaneo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/Icono.png"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="frame">
+            <div class="cabecera"></div>
+            <div class="logo2"></div>
+            <div class="fondo2"></div>
+            <div class="tarjeta10"></div>
+            <span class="v212_214">ESCANEO</span>
+
+            <span class="v212_223">MyVitality  escaneará su cuerpo totalmente</br>en busca de cualquier anomalía.</br>Túmbese y espere tranquilo/a a los resultados.</br>Tiempo estimado: 15 min.</span>
+            <div class="v212_231"></div>
+            <span class="v212_238">Iniciar escaneo</span>
+            
+            <div class="v212_239"></div>
+            <div class="navbar">
+                <button class="iconoInicio" onclick="aInicio()"></button>
+                <span class="inicio">INICIO</span>
+                <button class="iconoDeporte" onclick="aDeporte()"></button>
+                <span class="deporte">DEPORTE</span>
+                <button class="iconoEscaneoNaranja" onclick="aEscaneo()"></button>
+                <span class="escaneoNaranja">ESCANEO</span>
+                <button class="iconoPerfil" onclick="aPerfil()"></button>
+                <span class="perfil">PERFIL</span>
+            </div>
+        </div>
+        <script>
+            function aInicio() {
+                window.location.href = "inicio.html";
+            }
+            function aDeporte() {
+                window.location.href = "sport.html";
+            }
+            function aEscaneo() {
+                window.location.href = "scan.html";
+            }
+            function aPerfil() {
+                window.location.href = "profile.html";
+            }
+        </script>
+    </body>
+</html>

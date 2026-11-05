@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+        <link href="./css/main.css" rel="stylesheet" />
+        <title>Restablecer contraseña</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/Icono.png"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="frame">
+            <div class="cabecera"></div>
+            <span class="tituloOlvido">OLVIDÉ MI CONTRASEÑA</span>
+            <span class="texto2">Introduce tu DNI/NIE para poder enviarte a tu</br>número asociado el código de restablecimiento</span>
+            <input class="input3" type="text" id="username" placeholder="Usuario (DNI/NIE)" onfocus="limpiaTexto()" oninput="poneDNI()">
+            <button class="botonCerrar" onclick="cerrar()">Cerrar</button>
+            <button class="botonEnviar" onclick="boton()">ENVIAR</button>
+            <div class="logo2"></div>
+        </div>
+        <script>
+            var textoDNI = "";
+            var textoVacio = "";
+            function boton() {
+              var input1 = document.getElementById("username");
+        
+              if (input1.value) {
+                window.location.href = "forgotPass2.html";
+              }
+            }
+            function limpiaTexto() {
+                var input = document.getElementById("username");
+                input.placeholder = textoVacio;
+            }
+            function poneDNI() {
+                var input = document.getElementById("username");
+                input.value = textoDNI;
+            }
+            function cerrar() {
+                window.location.href = "login.html";
+            }
+        </script>
+    </body>
+</html>

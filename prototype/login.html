@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+        <link href="./css/main.css" rel="stylesheet" />
+        <title>Inicio de Sesión</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/Icono.png"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="frame">
+            <div class="cabecera"></div>
+            <div class="logo2"></div>
+            <span class="acceso">ACCESO</span>
+            <span class="texto">Introduce tus credenciales</br>de acceso</span>
+            <input class="input100" type="text" id="username" placeholder="Usuario (DNI/NIE)" onfocus="limpiaTexto()" oninput="poneDNI()">
+            <input class="input2" type="password" id="password" placeholder="Contraseña" onfocus="limpiaTexto2()" oninput="ponePass()">
+            <div class="visualizar">
+                <button class="botonVisualizar" onclick="togglePassword()"></button>
+            </div>
+            <button class="botonEntrar" onclick="boton()">ENTRAR</button>
+            <a href="forgotPass.html" class="olvido">Olvidé mi contraseña</a>
+        </div>
+        <script>
+            var textoDNI = "";
+            var textoPass = "Hola1234";
+            var textoVacio = "";
+            function boton() {
+              var input1 = document.getElementById("username");
+              var input2 = document.getElementById("password");
+              var boton = document.getElementById("botonEntrar");
+        
+              if (input1.value && input2.value) {
+                window.location.href = "inicio.html";
+              }
+            }
+            function togglePassword() {
+                var passwordInput = document.getElementById("password");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                } else {
+                    passwordInput.type = "password";
+                }
+            }
+            function limpiaTexto() {
+                var input = document.getElementById("username");
+                input.placeholder = textoVacio;
+            }
+            function limpiaTexto2() {
+                var input = document.getElementById("password");
+                input.placeholder = textoVacio;
+            }
+            function poneDNI() {
+                var input = document.getElementById("username");
+                input.value = textoDNI;
+            }
+            function ponePass() {
+                var input = document.getElementById("password");
+                input.value = textoPass;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+        <link href="./css/main.css" rel="stylesheet" />
+        <title>Restablecer contraseña</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/Icono.png"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="frame">
+            <div class="cabecera"></div>
+            <span class="tituloOlvido2">OLVIDÉ MI CONTRASEÑA</span>
+            <span class="texto3">Hemos enviado un código de</br>restablecimiento a tu número asociado</br>+34 66*****59</br>Introdúcelo a continuación junto</br>a la nueva contraseña</span>
+            <input class="input4" type="text" id="code" placeholder="Código de restablecimiento" onfocus="limpiaTexto()" oninput="poneCodigo()">
+            <button class="botonCerrar" onclick="cerrar()">Cerrar</button>
+            <button class="botonEnviar2" onclick="boton()">ENVIAR</button>
+            <div class="visualizar">
+                <button class="botonVisualizar2" onclick="togglePassword()"></button>
+                <button class="botonVisualizar3" onclick="togglePassword2()"></button>
+            </div>
+            <input class="input5" type="password" id="password" placeholder="Nueva contraseña" onfocus="limpiaTexto2()" oninput="ponePass()">
+            <div class="v204_45"></div>
+            <div class="v204_46"></div>
+            <input class="input6" type="password" id="password2" placeholder="Repita la contraseña" onfocus="limpiaTexto3()" oninput="ponePass2()">
+            <div class="logo2"></div>
+        </div>
+        <script>
+            var textoCode = "C0d1GoR35";
+            var textoPass = "Hola1234";
+            var textoVacio = "";
+            function boton() {
+              var input1 = document.getElementById("code");
+              var input2 = document.getElementById("password");
+              var input3 = document.getElementById("password2");
+              var boton = document.getElementById("botonEnviar");
+        
+              if (input1.value && input2.value && input3.value) {
+                window.location.href = "login.html";
+              }
+            }
+            function togglePassword() {
+                var passwordInput = document.getElementById("password");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                } else {
+                    passwordInput.type = "password";
+                }
+            }
+            function togglePassword2() {
+                var passwordInput = document.getElementById("password2");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                } else {
+                    passwordInput.type = "password";
+                }
+            }
+            function limpiaTexto() {
+                var input = document.getElementById("code");
+                input.placeholder = textoVacio;
+            }
+            function limpiaTexto2() {
+                var input = document.getElementById("password");
+                input.placeholder = textoVacio;
+            }
+            function limpiaTexto3() {
+                var input = document.getElementById("password2");
+                input.placeholder = textoVacio;
+            }
+            function poneCodigo() {
+                var input = document.getElementById("code");
+                input.value = textoCode;
+            }
+            function ponePass() {
+                var input = document.getElementById("password");
+                input.value = textoPass;
+            }
+            function ponePass2() {
+                var input = document.getElementById("password2");
+                input.value = textoPass;
+            }
+            function cerrar() {
+                window.location.href = "login.html";
+            }
+        </script>
+    </body>
+</html>
