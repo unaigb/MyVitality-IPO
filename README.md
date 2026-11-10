@@ -127,6 +127,7 @@ El avatar de perfil es una silueta genérica y los datos de salud, fechas y nomb
 **Unai García** — Grado en Ingeniería Informática (Universidad de Salamanca)
 
 - 🐙 GitHub: [@unaigb](https://github.com/unaigb)
+- 🌐 Portfolio: [unaigb.dev](https://unaigb.dev)
 
 ---
 
